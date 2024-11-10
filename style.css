@@ -1,0 +1,298 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Full-width image styles */
+.full-width-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-width: 1200px; /* Prevent the image from becoming too wide */
+  display: block; /* Remove any unwanted spacing below the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/* Basic Layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+
+/* Header Styles */
+header {
+  
+  padding: 80px 0; /* Increased padding to give more space around the header */
+  text-align: center; /* Centers the text */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+h1 {
+  font-size: 4.5em; /* Large but not overwhelming */
+  color: rgb(20, 18, 18); /* White text color for high contrast */
+  font-family: 'Roboto', sans-serif; /* Google's official font for a clean, modern look */
+  font-weight: 700; /* Bold text */
+  letter-spacing: 3px; /* Adds space between letters for elegance */
+  
+  margin: 0; /* Removes any extra margin */
+}
+
+h1 span {
+
+  text-shadow: 2px 2px 12px rgba(100, 100, 70, 0.9); /* Golden glow effect */
+}
+
+
+/* Main Content */
+main {
+  margin-top: 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Gallery Section */
+.gallery-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Call to Action Button */
+.btn-learn-more {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-learn-more:hover {
+  background-color: #45a049;
+}
+
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(to right, #333, #555); /* Gradient background */
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer content container */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer text */
+footer p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Contact Information */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Quick Links */
+.quick-links {
+  margin-top: 20px;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.quick-links a:hover {
+  color: #f39c12; /* Hover effect */
+}
+
+/* Newsletter Section */
+.newsletter {
+  margin-top: 20px;
+}
+
+
+
+
+
+.newsletter button:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  .quick-links a {
+    font-size: 12px; /* Smaller font size for quick links */
+  }
+
+  .newsletter input,
+  .newsletter button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Features Section */
+.features {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.features .section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.features .section-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features ul li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.features ul li i {
+  color: #f39c12;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.features ul li:hover {
+  transform: translateX(5px); /* Hover effect for list items */
+}
+
+.features ul li i:hover {
+  color: #e67e22; /* Icon hover color */
+}
+
+.btn-learn-more {
+  display: inline-block;
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 25px;
+}
+
+.btn-learn-more:hover {
+  background-color: #e67e22;
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
